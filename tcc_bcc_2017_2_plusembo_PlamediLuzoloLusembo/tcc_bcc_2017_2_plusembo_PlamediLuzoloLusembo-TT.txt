@@ -1,0 +1,92 @@
+PROTÓTIPO DE SISTEMA DE AUTOMAÇÃO RESIDENCIAL INTEGRADO COM RASPBERRY PI UTILIZANDO WINDOWS
+===== Tutorial =====
+      --------
+
+Requisitos:
+   - PC com Windows 10; 
+   - Raspberry Pi 3 Model B:
+	* 1 case em plástico (opcional);
+	* 1 fonte de alimentação MicroUSB de 2.5A;
+	* 1 cartão MicroSD Class 10 de 8GB (no mínimo);
+	* 1 leitor USB de cartão MicroSD;
+	* 1 cabo HDMI.
+   - Componentes eletrônicos:
+	* Módulo relé 8 canais;
+	* Módulo sensor de movimento PIR - HC-SR501;
+	* Módulo sensor de temperatura e umidade DHT11;
+	* Mini Cooler;
+	* Buzzer Ativo Bip Contínuo - PCI 12mm;
+	* Motor de passo 28BYJ-48 com o Módulo Driver Uln2003
+   	* LEDs Straw Hat (2.4V), resistores de 220Ohms, fios jumpers, placa PCI universal ilhada 10x5, 2 fontes de alimentação 12V e  5V.
+
+Construir a centra de controle seguindo o esquema apresentado na monografia.
+
+Instalar o IDE Visual Studio: o executável do Visual Studio encontra-se na pasta outros
+Instalar o IDE Android Studio: o executável do Android Studio encontra-se na pasta outros
+
+Executar o software embarcado
+=============================
+O software embarcado encontra-se na pasta: fonte/HouseberrySoft
+
+Utilizar o IDE Visual Studio para abrir o projeto.
+Para explorar e executar projetos configurar o ambiente de desenvolvimento:
+1) instalar a extensão do Windows IoT Project Templates diretamente do Visual Studio:
+   - no menu Tools;
+   - clicar em Extensions and Updates;
+   - na caixa de diálogo que aparece para extensões e atualizações, ir em Online e pesquisar pelo Windows IoT Project Templates.
+2) habilitar o computador para o modo desenvolvedor:
+   - nas configurações do computador clicar em Para desenvolvedores;
+   - selecionar Modo de desenvolvedor.
+3) Com o Visual Studio adicionar nas referências do projeto a extensão Windows IoT Extensions for the UWP:
+   - ir em References;
+   - clicar como o botão dirteito do mouse em References e clicar em Add reference...;
+   - na caixa de diáloguo que aparece ir em Universal Windows e clicar em Extensions;
+   - selecionar Windows IoT Extentions for the UWP.
+
+ 
+Executar o aplicativo móvel
+===========================
+O plicativo móvel encontra-se na pasta: fonte/HouseberryApp
+Utilizar o IDE Android Studio para abrir o projeto
+Executar o aplicativo no Android Emulator:
+   - no Android Studio, selecione Tools > Android > AVD Manager;
+   - clicar em AVD Manager Ícone do AVD Manager na barra de ferramentas;
+   - o AVD Manager é exibido. clica em Create Virtual Device... para criar um novo emulador.
+
+O emulador deve ter as especificações seguintes:
+   - Resolução: 1080 x 1920: xxhdpi;
+   - API 22;
+   - Versão Android: Android 5.1 (Google APIs) no mínimo;
+   - CPU: x86;
+   - Disco: 4GB (no mínimo).
+
+
+Utilizar o Sistema de Automação
+===============================
+Para utilizar o sistema:
+1) é necessário rodar primeiramente o servidor fazendo o deploy no Raspberry Pi 3 Model B (modelo utilizado no trabalho).
+O deploy do software no Raspberry Pi é realizado remotamente via rede a partir do Visual Studio.
+
+Antes de efetuar o deploy do software:
+   - definir a arquitetura ARM no menu localizada na barra de ferramentas do Visual Studio;
+   - em seguida, no menu encontrado diretamente à direita selecionar Remote Machine.
+
+2) depois, o aplicativo móvel pode ser acessado para executar o cliente.
+   Quando inicializa o aplicativo móvel, um usuário padrão é criado com as seguintes informações:
+
+   Usuário: plam.lusembo@gmail.com
+   senha: 09876
+   
+   Para acessar o aplicativo móvel as configuração de IP do servidor e porta de conexão devem ser feitas devidamente:
+   - na tela de login selecionar Configurar o servidor após o login
+   - clicar em Entrar
+   - na tela de configurações informar o IP do Raspberry Pi. A porta de conexão é 9000 (padrão).
+
+--------------------------------------------------------------------------------------------------------------------------
+
+Plamedi L. Lusembo
+plam.l@live.fr
+plam.lusembo@gmail.com
+UNIVERSIDADE REGIONAL DE BLUMENAU
+CENTRO DE CIÊNCIAS EXATAS E NATURAIS
+CURSO DE CIÊNCIA DA COMPUTAÇÃO – BACHARELADO 
