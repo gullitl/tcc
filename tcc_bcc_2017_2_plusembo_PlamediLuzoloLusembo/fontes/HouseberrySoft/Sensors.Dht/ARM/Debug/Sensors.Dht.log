@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  Dht11.cpp
+  Dht22.cpp
+     Creating library C:\MEGAsync\VisualStudioProjects\HouseberrySoft\ARM\Debug\Sensors.Dht\Sensors.Dht.lib and object C:\MEGAsync\VisualStudioProjects\HouseberrySoft\ARM\Debug\Sensors.Dht\Sensors.Dht.exp
+  Sensors.Dht.vcxproj -> C:\MEGAsync\VisualStudioProjects\HouseberrySoft\ARM\Debug\Sensors.Dht\Sensors.Dht.dll
+  Sensors.Dht.vcxproj -> C:\MEGAsync\VisualStudioProjects\HouseberrySoft\ARM\Debug\Sensors.Dht\Sensors.Dht.pdb (Partial PDB)

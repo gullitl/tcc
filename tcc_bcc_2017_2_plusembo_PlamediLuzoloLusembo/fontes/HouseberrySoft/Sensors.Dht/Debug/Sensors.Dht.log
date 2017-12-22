@@ -1,0 +1,6 @@
+﻿  pch.cpp
+  Dht11.cpp
+  Dht22.cpp
+     Creating library F:\IoT\Samples\TemperatureSensorSample\Debug\Sensors.Dht\Sensors.Dht.lib and object F:\IoT\Samples\TemperatureSensorSample\Debug\Sensors.Dht\Sensors.Dht.exp
+  Sensors.Dht.vcxproj -> F:\IoT\Samples\TemperatureSensorSample\Debug\Sensors.Dht\Sensors.Dht.dll
+  Sensors.Dht.vcxproj -> F:\IoT\Samples\TemperatureSensorSample\Debug\Sensors.Dht\Sensors.Dht.pdb (Partial PDB)

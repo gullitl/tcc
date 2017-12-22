@@ -1,0 +1,3 @@
+C:\MEGAsync\VisualStudioProjects\HouseberrySoft\HouseberrySoft\HouseberrySoft.csproj;arm
+C:\MEGAsync\VisualStudioProjects\HouseberrySoft\LightBuzz.SMTP\LightBuzz.SMTP\LightBuzz.SMTP.csproj;arm
+C:\MEGAsync\VisualStudioProjects\HouseberrySoft\Sensors.Dht\Sensors.Dht.vcxproj;arm
