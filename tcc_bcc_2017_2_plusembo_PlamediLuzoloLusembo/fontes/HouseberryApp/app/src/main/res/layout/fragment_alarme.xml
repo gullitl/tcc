@@ -1,0 +1,83 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/alarmeFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hba.fetokisystems.houseberryapp.AlarmeFragment"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:id="@+id/relativeLayout"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="26dp"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Switch
+            android:id="@+id/swtAlarme"
+            android:layout_width="295dp"
+            android:layout_height="27dp"
+            android:text="Ativar Alarme"
+            tools:layout_editor_absoluteX="33dp"
+            tools:layout_editor_absoluteY="5dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="300dp"
+        android:layout_height="320dp"
+        android:layout_marginBottom="25dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/relativeLayout"
+        app:layout_constraintVertical_bias="0.057"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <Button
+            android:id="@+id/btnAtualizaHistoricoAlarme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/listView"
+            android:layout_alignParentBottom="true"
+            android:text="ATUALIZAR" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:text="Histórico"
+            tools:layout_editor_absoluteX="46dp"
+            tools:layout_editor_absoluteY="138dp" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="297dp"
+            android:layout_height="250dp"
+            android:layout_above="@+id/btnAtualizaHistoricoAlarme"
+            android:layout_alignParentStart="true"
+            tools:layout_editor_absoluteX="49dp"
+            tools:layout_editor_absoluteY="167dp" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

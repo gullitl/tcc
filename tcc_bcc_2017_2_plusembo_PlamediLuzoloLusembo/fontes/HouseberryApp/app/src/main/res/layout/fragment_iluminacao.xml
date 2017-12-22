@@ -1,0 +1,130 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/iluminacaoFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hba.fetokisystems.houseberryapp.IluminacaoFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="359dp"
+        android:layout_marginEnd="7dp"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1">
+
+        <Switch
+            android:id="@+id/swtLuzSala"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="51dp"
+            android:text="Luz da Sala" />
+
+        <Switch
+            android:id="@+id/swtLuzCozinha"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/swtLuzSala"
+            android:layout_below="@+id/swtLuzSala"
+            android:layout_marginTop="16dp"
+            android:text="Luz da Cozinha" />
+
+        <Switch
+            android:id="@+id/swtLuzQuartoI"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/swtLuzCozinha"
+            android:layout_below="@+id/swtLuzCozinha"
+            android:layout_marginTop="15dp"
+            android:text="Luz do Quarto I" />
+
+        <Switch
+            android:id="@+id/swtLuzQuartoII"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/swtLuzQuartoI"
+            android:layout_below="@+id/swtLuzQuartoI"
+            android:layout_marginTop="17dp"
+            android:text="Luz do Quarto II" />
+
+        <Switch
+            android:id="@+id/swtLuzesJardim"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/swtLuzQuartoII"
+            android:layout_below="@+id/swtLuzQuartoII"
+            android:layout_marginTop="17dp"
+            android:text="Luzes do Jardim" />
+
+        <Switch
+            android:id="@+id/swtTodas"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/swtLuzesJardim"
+            android:layout_marginBottom="35dp"
+            android:text="Todas as luzes" />
+
+        <ImageView
+            android:id="@+id/imageView10"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/swtLuzCozinha"
+            android:layout_marginEnd="14dp"
+            android:layout_toStartOf="@+id/swtLuzSala"
+            app:srcCompat="@drawable/lr" />
+
+        <ImageView
+            android:id="@+id/imageView11"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_above="@+id/swtLuzQuartoI"
+            android:layout_alignStart="@+id/imageView10"
+            app:srcCompat="@drawable/stove" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/swtLuzQuartoI"
+            android:layout_alignStart="@+id/imageView11"
+            app:srcCompat="@drawable/bed" />
+
+        <ImageView
+            android:id="@+id/imageView13"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:srcCompat="@drawable/bed2"
+            android:layout_above="@+id/swtLuzesJardim"
+            android:layout_alignStart="@+id/imageView12" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="30dp"
+            android:layout_height="35dp"
+            android:layout_alignBottom="@+id/swtLuzesJardim"
+            android:layout_alignStart="@+id/imageView13"
+            app:srcCompat="@drawable/garden" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:srcCompat="@drawable/idea"
+            android:layout_alignBottom="@+id/swtTodas"
+            android:layout_alignStart="@+id/imageView14" />
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

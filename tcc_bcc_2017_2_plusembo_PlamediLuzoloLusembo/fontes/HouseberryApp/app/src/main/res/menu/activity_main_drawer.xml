@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Controle">
+        <menu>
+            <group android:id="@+id/me"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_iluminacao"
+                    android:icon="@drawable/il"
+                    android:title="Iluminação" />
+                <item
+                    android:id="@+id/nav_portao_piscina"
+                    android:icon="@drawable/gt"
+                    android:title="Portão" />
+                <item
+                    android:id="@+id/nav_temperatura_humidade"
+                    android:icon="@drawable/hs"
+                    android:title="Ar condicionado e DHT" />
+                <item
+                    android:id="@+id/nav_alarme"
+                    android:icon="@drawable/alarm"
+                    android:title="Alarme" />
+
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Ajuda">
+        <menu>
+            <group android:id="@+id/menu_nav_temp_gid"
+                android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_configuracoes"
+                    android:icon="@drawable/config"
+                    android:title="Configurações" />
+                <item
+                    android:id="@+id/nav_sobre"
+                    android:icon="@drawable/sobre"
+                    android:title="Sobre" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Sair">
+        <group android:id="@+id/gexit"
+            android:checkableBehavior="none">
+            <item
+                android:id="@+id/nav_fechar"
+                android:icon="@drawable/signout"
+                android:title="Fechar" />
+        </group>
+    </item>>
+
+</menu>

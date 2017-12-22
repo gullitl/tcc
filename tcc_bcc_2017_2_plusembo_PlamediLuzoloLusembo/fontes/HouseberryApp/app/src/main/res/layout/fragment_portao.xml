@@ -1,0 +1,71 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/configuracoesFragmentTeste"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.hba.fetokisystems.houseberryapp.PortaoFragment"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout3"
+        android:layout_width="0dp"
+        android:layout_height="298dp"
+        android:layout_marginEnd="9dp"
+        android:layout_marginStart="9dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        android:layout_marginBottom="84dp"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <Button
+            android:id="@+id/btnFecharPortao"
+            android:layout_width="125dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="56dp"
+            android:layout_toStartOf="@+id/btnAbrirPortao"
+            android:text="ABRIR" />
+
+        <Button
+            android:id="@+id/btnAbrirPortao"
+            android:layout_width="150dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/btnFecharPortao"
+            android:layout_marginEnd="40dp"
+            android:text="FECHAR" />
+
+        <TextView
+            android:id="@+id/txvLegenda "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="20dp"
+            android:layout_marginTop="19dp"
+            android:layout_toStartOf="@+id/btnAbrirPortao"
+            android:textColor="@android:color/holo_red_dark" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="110dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="9dp"
+        android:layout_marginLeft="121dp"
+        app:layout_constraintBottom_toTopOf="@+id/relativeLayout3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/gate"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+</android.support.constraint.ConstraintLayout>
